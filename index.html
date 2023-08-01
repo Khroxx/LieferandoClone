@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lieferandy</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+</head>
+<body onload="renderMenu(), load()">
+    <header>
+        <div class="headline"><a href="index.html"><img src="img/bakew.png" alt=""><h1>Lieferandy</h1></a></div>
+        <div id="about" class="about">
+            <a href="AGB.html">AGB</a>
+            <a href="impressum.html">Impressum</a>
+            <a href="datenschutz.html">Datenschutz</a>
+        </div>
+    </header>
+    <div id="mainpage">
+        <div class="topContainer">
+            <img class="frontImage" src="img/bg.jpg" alt="">
+        <h1><span>Lumberjack's</span></h1>
+        </div>
+        <div id="itemContainer">
+        </div>
+    </div>
+    <div id="basket">
+        <div id="retract"><button class="itemExtend" onclick="retractBasket()">Minimieren</button></div>
+        <h1>Warenkorb</h1>
+        <div id="items"></div>
+        <div id="extend"><button class="itemExtend" onclick="extendBasket()">Warenkorb anzeigen</button></div>
+        <div id="lieferkosten"></div>
+        <div class="bestellwert">Der Mindesbestellwert liegt hier bei 20€</div>
+        <button id="pay" onclick="payBasket()">Jetzt Bestellen</button>
+        
+    </div>
+</body>
+</html>
